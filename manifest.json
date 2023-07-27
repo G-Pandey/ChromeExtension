@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Peek",
+  "version": "1.0",
+  "description": "Shows the content of password-type text boxes",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.jpg",
+    "32": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
